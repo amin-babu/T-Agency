@@ -155,3 +155,79 @@ nav{
 .nav__btn{
   display: none;
 }
+
+@media (width > 768px) {
+  nav{
+    position: static;
+    padding: 2rem 1rem 1rem;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .nav__header{
+    flex: 1;
+    padding: 0;
+    background: transparent;
+  }
+
+  .nav__logo a{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+
+  .nav__logo a span{
+    padding: 4px 14px;
+    color: var(--white);
+    background-color: var(--primary-color);
+  }
+
+  .nav__menu__btn{
+    display: none;
+  }
+  
+  .nav__links{
+    position: static;
+    padding: 0;
+    max-width: fit-content;
+    flex-direction: row;
+    background-color: transparent;
+    transform: none;
+  }
+
+  .nav__links a{
+    color: var(--text-dark);
+  }
+
+  .nav__links a:hover{
+    color: var(--primary-color);
+  }
+
+  .nav__links li:last-child{
+    display: none;
+  }
+
+  .nav__btn{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav__btn a{
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    white-space: nowrap;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+  }
+
+  .nav__btn a:hover{
+    color: var(--white);
+    background-color: var(--primary-color);
+  }
+}
