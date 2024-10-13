@@ -156,6 +156,25 @@ nav{
   display: none;
 }
 
+.header__container{
+  display: grid;
+  gap: 4rem 2rem;
+  overflow: hidden;
+}
+
+.header__image{
+  position: relative;
+  isolation: isolate;
+}
+
+.header__image img{
+  max-width: 350px;
+  margin-inline: auto;
+}
+/*---------------------------------------------------------------------------------
+----------------------------------Media Queries------------------------------------
+---------------------------------------------------------------------------------*/
+
 @media (width > 768px) {
   nav{
     position: static;
