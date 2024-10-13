@@ -171,6 +171,81 @@ nav{
   max-width: 350px;
   margin-inline: auto;
 }
+
+.header__image::before,
+.header__image::after{
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 100%;
+  max-width: 400px;
+}
+
+.header__image::before{
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  z-index: -2;
+}
+
+.header__image::after{
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(calc(-50% - 3rem));
+  border: 5px solid var(--text-dark);
+  opacity: .75;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.header__content .section__subheader{
+  margin-inline: auto;
+}
+
+.header__content h1{
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 4.25rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.header__content h1 span{
+  color: var(--primary-color);
+}
+
+.header__content .section__description{
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.header__btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header__btns a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.header__btns a span{
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.header__btns a:hover{
+  color: var(--primary-color);
+}
+
 /*---------------------------------------------------------------------------------
 ----------------------------------Media Queries------------------------------------
 ---------------------------------------------------------------------------------*/
