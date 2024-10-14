@@ -12,35 +12,35 @@ menuBtn.addEventListener('click', (e) => {
 navLinks.addEventListener('click', (e) => {
   navLinks.classList.remove("open")
   menuBtnIcon.setAttribute('class', 'ri-menu-line')
-})
+});
 
 const scrollRevealOption = {
   origin: 'bottom',
   distance: '50px',
   duration: '1000',
-}
+};
 
 ScrollReveal().reveal(".header__image img", {
   ...scrollRevealOption,
   origin: "right",
-})
+});
 
 ScrollReveal().reveal(".header__content .section__subheader", {
   ...scrollRevealOption,
   delay: 500,
-})
+});
 
 ScrollReveal().reveal(".header__content h1", {
   ...scrollRevealOption,
   delay: 1000,
-})
+});
 
 ScrollReveal().reveal(".header__content .section__description", {
   ...scrollRevealOption,
   delay: 1500,
-})
+});
 
 ScrollReveal().reveal(".header__btns", {
   ...scrollRevealOption,
   delay: 2000,
-})
+});
