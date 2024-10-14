@@ -246,6 +246,51 @@ nav{
   color: var(--primary-color);
 }
 
+.stats__container{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.stats__card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.stats__card h4{
+  margin-bottom: .5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.stats__card p{
+  font-size: 1.2rem;
+  color: var(--text-dark);
+}
+
+@media (width > 540px){
+  .stats__container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .stats__card{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .stats__devider{
+    height: 75px;
+    width: 2px;
+    background-color: var(--primary-color);
+  }
+}
+
 /*---------------------------------------------------------------------------------
 ----------------------------------Media Queries------------------------------------
 ---------------------------------------------------------------------------------*/
