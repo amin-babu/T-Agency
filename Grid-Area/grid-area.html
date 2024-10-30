@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Area with 3 Columns</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      margin: 4px;
+      width: calc(100% - 8px);
+      border: 2px solid black;
+      height: calc(100vh - 8px);
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: auto auto auto; /* Now 3 columns */
+      align-items: center;
+      justify-content: center;
+      grid-template-areas: "dc db da";
+      gap: 1rem;
+    }
+    .child {
+      width: 400px;
+      height: 400px;
+      border: 1px solid rgb(129, 0, 0);
+      position: relative;
+    }
+
+    h1{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .da{
+      grid-area: da;
+    }
+    .db{
+      grid-area: db;
+    }
+    .dc{
+      grid-area: dc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="child da">
+      <h1>Div A</h1>
+    </div>
+    <div class="child db">
+      <h1>Div B</h1>
+    </div>
+    <div class="child dc">
+      <h1>Div C</h1>
+    </div>
+  </div>
+</body>
+</html>
